@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1> Editable Resume Builder </h1>
+    <form id="resume-form">
+        <fieldset>
+            <legend><b> Personal Information </b></legend>
+            <label for="name"> Name: </label>
+            <input type="text" id="name" placeholder="Enter your Name.." required><br>
+
+            <label for="number"> Date of Birth </label>
+            <input type="dob" id="Dob" placeholder=""><br>
+
+            <label for="Address"> Address </label>
+            <input type="text" id="Address" placeholder=""><br>
+
+            <label for="email"> Email </label>
+            <input type="email" id="email" placeholder="Your Email here..."><br>
+
+            <label for="mobile"> Mobile No </label>
+            <input type="tel" id="phone" placeholder=""><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b> Education </b></legend>
+            <label for="education"> Education </label>
+            <textarea id="education" placeholder="Enter your education" rows="4" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b> Skills </b></legend>
+            <label for="skills"> Skills </label>
+            <textarea id="skills" placeholder="Enter your skills here.." rows="4" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b> Work Experience </b></legend>
+            <label for="experience"> Experience </label>
+            <textarea id="experience" placeholder="share your work experience here.." rows="4"
+                required></textarea><br><br>
+        </fieldset>
+
+        <!--button generate resume-->
+        <p>For Generate your Resume click Below!!</p>
+        <button type="submit"><b> Generate Your Resume </b></button><br>
+    </form>
+    
+    <br>
+
+    <!--dynamic & editable resume-->
+    <div id="resume-display" contenteditable="true">
+        <!--Resume will be generated below-->
+    </div>
+     
+    <script src="script.js"></script>
+
+</body>
+
+</html>
